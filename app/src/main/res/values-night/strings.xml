@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kursus UTBK</string>
-    <string name="desc_app">Sebuah platform yang membantu educator untuk memperoleh penghasilan dengan mengajar dan membagikan konten pembelajaran</string>
-    <!--    <string name="prodi_name">Program Studi</string>-->
+    <string name="desc_app">Sebuah platform yang membantu educator untuk memperoleh penghasilan dengan mengajar dan membagikan konten pembelajaran di bidang UTBK</string>
     <string name="kursus_name">Kursus</string>
     <string name="hitung">Hitung</string>
     <string name="total_pembayaran">Total Pembayaran %1$.2f</string>

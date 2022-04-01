@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kursus UTBK</string>
-    <string name="desc_app">Sebuah platform yang membantu educator untuk memperoleh penghasilan dengan mengajar dan membagikan konten pembelajaran di bidang UTBK</string>
+    <string name="desc_app">Sebuah platform yang membantu educator untuk memperoleh penghasilan dengan mengajar dan membagikan konten pembelajaran terutama di bidang UTBK</string>
     <string name="kursus_name">Kursus</string>
     <string name="hitung">Hitung</string>
     <string name="total_pembayaran">Total Pembayaran %1$.2f</string>
@@ -59,4 +59,5 @@
 
     <string name="biaya_saintek">399000</string>
     <string name="biaya_soshum">299000</string>
+    <string name="biaya_campuran">699000</string>
 </resources>

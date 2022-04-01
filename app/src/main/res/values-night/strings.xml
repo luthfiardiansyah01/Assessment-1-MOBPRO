@@ -13,8 +13,6 @@
 
     <string name="name_invalid">Nama tidak boleh kosong.</string>
     <string name="time_invalid">Waktu tidak boleh kosong.</string>
-<!--    <string name="major_invalid">Prodi tidak boleh kosong.</string>-->
-<!--    <string name="course_invalid">Kursus tidak boleh kosong.</string>-->
     <string name="utbk_name_invalid">Kelompok Studi tidak boleh kosong.</string>
     <string name="study_group_invalid">Kelompok Ujian tidak boleh kosong.</string>
     <string name="price_invalid">Harga tidak boleh kosong.</string>
@@ -60,41 +58,6 @@
         <item>Sosiologi</item>
     </string-array>
 
-    <!--    <string name="rpla">250000</string>-->
-    <!--    <string name="tt">215000</string>-->
-    <!--    <string name="si">185000</string>-->
-
     <string name="biaya_saintek">399000</string>
     <string name="biaya_soshum">299000</string>
-
-    <!--    <string-array name="list_prodi_name">-->
-    <!--        <item />-->
-    <!--        <item>D3 Rekayasa Perangkat Lunak Aplikasi</item>-->
-    <!--        <item>D3 Teknolongi Telekomunikasi</item>-->
-    <!--        <item>D3 Sistem Informasi</item>-->
-    <!--    </string-array>-->
-
-    <!--    <string-array name="list_course_rpla">-->
-    <!--        <item />-->
-    <!--        <item>Implementasi Algoritma</item>-->
-    <!--        <item>Alat Bantu Gambar Digital untuk Antarmuka Aplikasi</item>-->
-    <!--        <item>Dasar Sistem Komputer</item>-->
-    <!--        <item>Matematika Informatika 1</item>-->
-    <!--    </string-array>-->
-
-    <!--    <string-array name="list_course_tt">-->
-    <!--        <item />-->
-    <!--        <item>Matematika Telekomunikasi I</item>-->
-    <!--        <item>Dasar Sistem Telekomunikasi</item>-->
-    <!--        <item>Rangkaian Listrik</item>-->
-    <!--        <item>Bengkel Mekanikal dan Elektrikal</item>-->
-    <!--    </string-array>-->
-
-    <!--    <string-array name="list_course_si">-->
-    <!--        <item />-->
-    <!--        <item>Pengantar Manajemen</item>-->
-    <!--        <item>Arsitektur dan Sistem Komputer</item>-->
-    <!--        <item>Algoritma dan Pemrograman Komputer</item>-->
-    <!--        <item>Aplikasi Manajemen Perkantoran</item>-->
-    <!--    </string-array>-->
 </resources>

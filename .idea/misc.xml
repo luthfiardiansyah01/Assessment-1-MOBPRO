@@ -3,7 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/drawable/circle_background.xml" value="0.1955" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.1955" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1955" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/drawable/saintek.xml" value="0.1955" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/layout/fragment_about.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/layout/fragment_fasilitas.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/layout/fragment_histori.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/layout/fragment_hitung.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/layout/item_histori.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/menu/histori_menu.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/KursusUTBK/app/src/main/res/menu/options_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/NgampusRek/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>

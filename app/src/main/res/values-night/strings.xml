@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kursus UTBK</string>
-    <string name="desc_app">Sebuah platform yang membantu educator untuk memperoleh penghasilan dengan mengajar dan membagikan konten pembelajaran</string>
+    <string name="desc_app">Sebuah platform yang membantu educator untuk memperoleh penghasilan dengan mengajar dan membagikan konten pembelajaran terutama di bidang UTBK</string>
     <!--    <string name="prodi_name">Program Studi</string>-->
     <string name="kursus_name">Kursus</string>
     <string name="hitung">Hitung</string>
@@ -11,16 +10,40 @@
     <string name="harga_prodi">Biaya</string>
     <string name="short_message">Terima kasih atas pembayaran</string>
 
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="copyright">Sebuah platform yang membantu guru untuk memperoleh penghasilan dengan mengajar serta membagikan materi dan latihan soal UTBK.\n\n
+        Aplikasi ini dibuat untuk kelas Mobpro 1.
+        Temukan kodenya di https://github.com/indraazimi/hitung-bmi\n\nCopyright © 2022 Luthfi Ardiansyah.\n
+        6706201136.
+    </string>
+    <string name="bagikan">Bagikan</string>
+    <string name="bagikan_template">Nama: %1$s \nKelompok studi: %2$s \nKelompok ujian: %3$s\n\n%4$s\n%5$s</string>
+
+    <string name="belum_ada_data">Belum ada data</string>
+    <string name="histori">Histori</string>
+    <string name="hapus_histori">Hapus Histori</string>
+
+    <string name="konfirmasi_hapus">Hapus semua histori?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
+
+    <string name="hasil_x">Biaya: %1$.2f - %2$s</string>
+    <string name="data_x">Jenis ujian: %1$s</string>
+
     <string name="name_invalid">Nama tidak boleh kosong.</string>
     <string name="time_invalid">Waktu tidak boleh kosong.</string>
-<!--    <string name="major_invalid">Prodi tidak boleh kosong.</string>-->
-<!--    <string name="course_invalid">Kursus tidak boleh kosong.</string>-->
     <string name="utbk_name_invalid">Kelompok Studi tidak boleh kosong.</string>
     <string name="study_group_invalid">Kelompok Ujian tidak boleh kosong.</string>
     <string name="price_invalid">Harga tidak boleh kosong.</string>
 
+    <!--    <string name="prog_intensif">Intensif</string>-->
+    <!--    <string name="prog_reguler">Reguler</string>-->
+    <!--    <string name="prog_bootcamp">Bootcamp</string>-->
     <string name="saintek">Saintek</string>
     <string name="soshum">Soshum</string>
+    <string name="campuran">Campuran</string>
+    <string name="lihat_program">Lihat Program</string>
+    <string name="kelas">Selamat bergabung di program %1$s</string>
     <string name="utbk_name">Kelompok Ujian</string>
     <string name="study_group">Kelompok Studi</string>
     <string-array name="study_groups">
@@ -60,41 +83,25 @@
         <item>Sosiologi</item>
     </string-array>
 
-    <!--    <string name="rpla">250000</string>-->
-    <!--    <string name="tt">215000</string>-->
-    <!--    <string name="si">185000</string>-->
+    <string name="intensif">Intensif</string>
+    <string name="reguler">Reguler</string>
+    <string name="bootcamp">Bootcamp</string>
 
-    <string name="biaya_saintek">399000</string>
-    <string name="biaya_soshum">299000</string>
+    <string name="fasilitas_intensif"><b><big>Fasilitas Program Intensif</big></b>
+        \n <li>Akses ribuan video belajar UTBK</li>
+        \n <li>Dapat bertanya seputar UTBK via video conference</li>
+        \n <li>Terdapat handbook paket kilat UTBK</li>
+    </string>
 
-    <!--    <string-array name="list_prodi_name">-->
-    <!--        <item />-->
-    <!--        <item>D3 Rekayasa Perangkat Lunak Aplikasi</item>-->
-    <!--        <item>D3 Teknolongi Telekomunikasi</item>-->
-    <!--        <item>D3 Sistem Informasi</item>-->
-    <!--    </string-array>-->
+    <string name="fasilitas_reguler"><b><big>Fasilitas Program Reguler</big></b>
+        \n <li>Try Out diadakan setiap pekan</li>
+        \n <li>Pembahasan dilakukan sehari setelah try out diadakan</li>
+        \n <li>Tanya jawab soal dapat secara online maupun offline</li>
+    </string>
 
-    <!--    <string-array name="list_course_rpla">-->
-    <!--        <item />-->
-    <!--        <item>Implementasi Algoritma</item>-->
-    <!--        <item>Alat Bantu Gambar Digital untuk Antarmuka Aplikasi</item>-->
-    <!--        <item>Dasar Sistem Komputer</item>-->
-    <!--        <item>Matematika Informatika 1</item>-->
-    <!--    </string-array>-->
-
-    <!--    <string-array name="list_course_tt">-->
-    <!--        <item />-->
-    <!--        <item>Matematika Telekomunikasi I</item>-->
-    <!--        <item>Dasar Sistem Telekomunikasi</item>-->
-    <!--        <item>Rangkaian Listrik</item>-->
-    <!--        <item>Bengkel Mekanikal dan Elektrikal</item>-->
-    <!--    </string-array>-->
-
-    <!--    <string-array name="list_course_si">-->
-    <!--        <item />-->
-    <!--        <item>Pengantar Manajemen</item>-->
-    <!--        <item>Arsitektur dan Sistem Komputer</item>-->
-    <!--        <item>Algoritma dan Pemrograman Komputer</item>-->
-    <!--        <item>Aplikasi Manajemen Perkantoran</item>-->
-    <!--    </string-array>-->
+    <string name="fasilitas_bootcamp"><b><big>Fasilitas Program Bootcamp</big></b>
+        \n <li>Bimbingan offline selama satu bulan menjelang pelaksanaan UTBK</li>
+        \n <li>Evaluasi belajar setelah pelaksanaan latihan soal seputar UTBK</li>
+        \n <li>Konsumsi makan 3x sehari serta coffee break 2x</li>
+    </string>
 </resources>

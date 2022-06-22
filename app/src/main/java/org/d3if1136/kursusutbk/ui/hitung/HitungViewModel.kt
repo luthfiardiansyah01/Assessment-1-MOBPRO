@@ -11,11 +11,13 @@ import org.d3if1136.kursusutbk.db.UtbkDao
 import org.d3if1136.kursusutbk.db.UtbkEntity
 import org.d3if1136.kursusutbk.model.HasilUtbk
 import org.d3if1136.kursusutbk.model.KategoriUtbk
+import org.d3if1136.kursusutbk.model.Kursus
 import org.d3if1136.kursusutbk.model.hitungUtbk
 
 class HitungViewModel(private val db: UtbkDao)  : ViewModel() {
     private val hasilUtbk = MutableLiveData<HasilUtbk?>()
     private val navigasi = MutableLiveData<KategoriUtbk?>()
+    private val backToCourse = MutableLiveData<Kursus?>()
     fun hitungKursus(time: Float, isStudy: Boolean, studyGroup: String, name: String, examGroup: String) {
         val dataUtbk = UtbkEntity(
             time = time,
@@ -34,11 +36,22 @@ class HitungViewModel(private val db: UtbkDao)  : ViewModel() {
 
     fun getHasilUtbk(): LiveData<HasilUtbk?> = hasilUtbk
 
+    fun getNavigasi() : LiveData<KategoriUtbk?> = navigasi
+
+    fun getBack():LiveData<Kursus?> = backToCourse
+
     fun mulaiNavigasi() {
         navigasi.value = hasilUtbk.value?.kategori
     }
     fun selesaiNavigasi() {
         navigasi.value = null
     }
-    fun getNavigasi() : LiveData<KategoriUtbk?> = navigasi
+
+    fun kembaliNavigasi(){
+        backToCourse.value?.jenis
+    }
+
+    fun selesaiNavigasiKursus() {
+        backToCourse.value = null
+    }
 }

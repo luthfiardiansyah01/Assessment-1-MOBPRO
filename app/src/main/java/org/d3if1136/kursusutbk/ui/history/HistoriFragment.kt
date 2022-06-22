@@ -1,8 +1,6 @@
 package org.d3if1136.kursusutbk.ui.history
 
-import HistoriAdapter
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider

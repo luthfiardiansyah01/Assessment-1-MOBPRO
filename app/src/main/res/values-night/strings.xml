@@ -44,6 +44,15 @@
     <string name="campuran">Campuran</string>
     <string name="lihat_program">Lihat Program</string>
     <string name="kelas">Selamat bergabung di program %1$s</string>
+    <string name="kursus">Jadwal</string>
+
+    <string name="message">%1$s diklik!</string>
+    <string name="koneksi_error">Koneksi error</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data kursus otomatis</string>
+    <string name="notif_title">Ada kelas kursus UTBK baru!</string>
+    <string name="notif_text">Cek sekarang biar nggak penasaran..</string>
+
     <string name="utbk_name">Kelompok Ujian</string>
     <string name="study_group">Kelompok Studi</string>
     <string-array name="study_groups">

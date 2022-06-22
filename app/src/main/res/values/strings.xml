@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Kursus UTBK</string>
     <string name="desc_app">Sebuah platform yang membantu educator untuk memperoleh penghasilan dengan mengajar dan membagikan konten pembelajaran terutama di bidang UTBK</string>
-<!--    <string name="prodi_name">Program Studi</string>-->
+    <!--    <string name="prodi_name">Program Studi</string>-->
     <string name="kursus_name">Kursus</string>
     <string name="hitung">Hitung</string>
     <string name="total_pembayaran">Total Pembayaran %1$.2f</string>
@@ -36,14 +36,23 @@
     <string name="study_group_invalid">Kelompok Ujian tidak boleh kosong.</string>
     <string name="price_invalid">Harga tidak boleh kosong.</string>
 
-<!--    <string name="prog_intensif">Intensif</string>-->
-<!--    <string name="prog_reguler">Reguler</string>-->
-<!--    <string name="prog_bootcamp">Bootcamp</string>-->
+    <!--    <string name="prog_intensif">Intensif</string>-->
+    <!--    <string name="prog_reguler">Reguler</string>-->
+    <!--    <string name="prog_bootcamp">Bootcamp</string>-->
     <string name="saintek">Saintek</string>
     <string name="soshum">Soshum</string>
     <string name="campuran">Campuran</string>
     <string name="lihat_program">Lihat Program</string>
     <string name="kelas">Selamat bergabung di program %1$s</string>
+    <string name="kursus">Jadwal</string>
+
+    <string name="message">%1$s diklik!</string>
+    <string name="koneksi_error">Koneksi error</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data kursus otomatis</string>
+    <string name="notif_title">Ada kelas kursus UTBK baru!</string>
+    <string name="notif_text">Cek sekarang biar nggak penasaran..</string>
+
     <string name="utbk_name">Kelompok Ujian</string>
     <string name="study_group">Kelompok Studi</string>
     <string-array name="study_groups">

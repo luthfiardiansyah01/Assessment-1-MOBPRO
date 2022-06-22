@@ -1,3 +1,5 @@
+package org.d3if1136.kursusutbk.ui.history
+
 import android.graphics.drawable.GradientDrawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -15,6 +17,7 @@ import java.util.*
 
 class HistoriAdapter:
     ListAdapter<UtbkEntity, HistoriAdapter.ViewHolder>(DIFF_CALLBACK) {
+
     companion object {
         private val DIFF_CALLBACK =
             object : DiffUtil.ItemCallback<UtbkEntity>() {
@@ -37,9 +40,6 @@ class HistoriAdapter:
         val binding = ItemHistoriBinding.inflate(inflater, parent, false)
         return ViewHolder(binding)
     }
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(getItem(position))
-    }
 
     class ViewHolder(
         private val binding: ItemHistoriBinding
@@ -47,6 +47,7 @@ class HistoriAdapter:
         private val dateFormatter = SimpleDateFormat("dd MMMM yyyy",
             Locale("id", "ID")
         )
+
         fun bind(item: UtbkEntity) = with(binding) {
             val hasilUtbk = item.hitungUtbk()
             kategoriTextView.text = hasilUtbk.kategori.toString().substring(0, 1)
@@ -67,6 +68,11 @@ class HistoriAdapter:
                     else -> {R.string.saintek}
                 }
             )
-            dataTextView.text = root.context.getString(R.string.data_x, jenisUjian) }
+            dataTextView.text = root.context.getString(R.string.data_x, jenisUjian)
+        }
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(getItem(position))
     }
 }

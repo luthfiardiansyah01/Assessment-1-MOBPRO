@@ -1,18 +1,16 @@
 package org.d3if1136.kursusutbk.ui.hitung
 
-import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.*
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-//import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import org.d3if1136.kursusutbk.R
 import org.d3if1136.kursusutbk.data.SettingDataStore
@@ -23,6 +21,7 @@ import org.d3if1136.kursusutbk.model.HasilUtbk
 import org.d3if1136.kursusutbk.model.KategoriUtbk
 import java.text.NumberFormat
 import java.util.*
+
 
 class HitungFragment : Fragment() {
     private lateinit var binding: FragmentHitungBinding
@@ -36,6 +35,7 @@ class HitungFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
+
         binding = FragmentHitungBinding.inflate(layoutInflater, container, false)
         setHasOptionsMenu(true)
         return binding.root
@@ -101,13 +101,26 @@ class HitungFragment : Fragment() {
             viewModel.mulaiNavigasi()
         }
         binding.shareButton.setOnClickListener { shareData() }
+        binding.buttonKursus.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_hitungFragment_to_mainFragment)
+//            viewModel.kembaliNavigasi()
+        }
         viewModel.getHasilUtbk().observe(requireActivity(), { showResult(it) })
-        viewModel.getNavigasi().observe(viewLifecycleOwner, {
+        viewModel.getNavigasi().observe(viewLifecycleOwner) {
             if (it == null) return@observe
-            findNavController().navigate(HitungFragmentDirections
-                .actionHitungFragmentToFasilitasFragment(it))
+            findNavController().navigate(
+                HitungFragmentDirections
+                    .actionHitungFragmentToFasilitasFragment(it)
+            )
             viewModel.selesaiNavigasi()
-        })
+        }
+//        viewModel.getBack().observe(viewLifecycleOwner) {
+//            if (it == null) return@observe
+//            findNavController().navigate(
+//                HitungFragmentDirections.actionHitungFragmentToKursusFragment()
+//            )
+//            viewModel.selesaiNavigasiKursus()
+//        }
         layoutDataStore = SettingDataStore(requireContext().dataStore)
         layoutDataStore.preferenceFlow.asLiveData().observe(viewLifecycleOwner, {
                 value -> activity?.invalidateOptionsMenu()
@@ -134,6 +147,13 @@ class HitungFragment : Fragment() {
         val shareIntent = Intent.createChooser(sendIntent, null)
         startActivity(shareIntent)
     }
+
+//    private fun replaceFragment(fragment: Fragment){
+//        val fragmentManager = (activity as FragmentActivity).supportFragmentManager
+//        val fragmentTransaction = fragmentManager.beginTransaction()
+//        fragmentTransaction.replace(R.id.fragmentController, fragment)
+//        fragmentTransaction.commit()
+//    }
 
     private fun hitungKursus(){
         val name = binding.namaLengkapInp.text.toString()
